@@ -7,7 +7,7 @@ LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27,16,2);  // 16 문자 및 2 라인
 
 void setup() {
   //Wire.begin();                // 화면에 나오게 하기
-  lcd.begin();             // 가로16개, 세로2개를 초기화 
+  lcd.begin();             // lcd.begin() 만 하시오.
   lcd.home();                  // 홈의로보내어 초기화
   lcd.clear();                 // 액정초기화
   lcd.print("Welcome to ");  // 화면에 Hello Arduino출력
